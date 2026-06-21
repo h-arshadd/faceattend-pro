@@ -11,6 +11,8 @@ import hashlib
 from datetime import datetime, date, timedelta
 from pathlib import Path
 from PIL import Image, ImageFilter
+from dotenv import load_dotenv
+load_dotenv()
 import warnings
 warnings.filterwarnings("ignore")
 

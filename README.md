@@ -14,9 +14,11 @@ Real-time face recognition attendance and surveillance system built with Streaml
 - Role-based access for admins and teachers
 
 ## Tech Stack
-Python, Streamlit, OpenCV, InsightFace, ONNX Runtime, PyTorch/Torchvision, Pandas, Groq API
+Python 3.10, Streamlit, OpenCV, InsightFace, ONNX Runtime, PyTorch/Torchvision, Pandas, Groq API
 
 ## Setup
+
+Tested on Python 3.10.10.
 
 1. Clone the repo
 ```
@@ -24,22 +26,29 @@ git clone https://github.com/h-arshadd/faceattend-pro.git
 cd faceattend-pro
 ```
 
-2. Install dependencies
+2. Create and activate a virtual environment (recommended)
+```
+python -m venv venv
+venv\Scripts\activate
+```
+
+3. Install dependencies
 ```
 pip install -r requirements.txt
 ```
+Note: InsightFace can occasionally be tricky to install on Windows. If `pip install insightface` fails, try installing a prebuilt wheel matching your Python version, or refer to the [InsightFace docs](https://github.com/deepinsight/insightface).
 
-3. Create a `.env` file in the project root:
+4. Create a `.env` file in the project root:
 ```
 GROQ_API_KEY=your_groq_api_key_here
 ```
 
-4. Run the app
+5. Run the app
 ```
 streamlit run app.py
 ```
 
-5. Default login: username `admin`, password `admin123` (change after first login)
+6. Default login: username `admin`, password `admin123` (change after first login)
 
 ## Notes
 This was developed as a Final Year Project. The batch import feature expects a CSV with `image` and `label` columns; no sample dataset is included due to privacy (real student data was used during development and testing).
