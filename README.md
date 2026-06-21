@@ -16,6 +16,32 @@ Real-time face recognition attendance and surveillance system built with Streaml
 ## Tech Stack
 Python 3.10, Streamlit, OpenCV, InsightFace, ONNX Runtime, PyTorch/Torchvision, Pandas, Groq API
 
+## Screenshots
+
+**Login**
+![Login](screenshots/login.png)
+
+**Dashboard**
+![Dashboard](screenshots/dashboard.png)
+
+**Live Attendance**
+![Live Attendance](screenshots/live-attendance.png)
+
+**Register User**
+![Register User](screenshots/register-user.png)
+
+**Attendance Records**
+![Records](screenshots/records.png)
+
+**Intruder Detection**
+![Intruder Detector](screenshots/intruder-detector.png)
+
+**Smart Report Agent**
+![Report Assistant](screenshots/report-assistant.png)
+
+**Settings**
+![Settings](screenshots/settings.png)
+
 ## Setup
 
 Tested on Python 3.10.10.
